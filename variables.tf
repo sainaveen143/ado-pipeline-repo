@@ -1,10 +1,8 @@
 variable "project_id" {
-  type        = string
   description = "(Required) ID of the project to which the compute instance belongs"
 }
 
 variable "instance_name" {
-  type        = string
   description = "(Required) Name of the compute instance"
 }
 
@@ -32,8 +30,8 @@ variable "zone_name" {
 
 variable "network_interface" {
   type = list(object({
-    network_name       = string
-    subnetwork_name    = string
+    network_name       = any
+    subnetwork_name    = any
     network_ip         = string
     external_ip_needed = bool
     access_config      = map(string)
