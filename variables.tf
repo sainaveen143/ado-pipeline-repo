@@ -116,5 +116,5 @@ variable "snapshot_policy_name" {
   default     = ""
 }
 variable "metadata_startup_script" {
-
+  default = ""
 }
